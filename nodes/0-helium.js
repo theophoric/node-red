@@ -35,8 +35,7 @@ module.exports = function(RED) {
         this.atomConfig = RED.nodes.getNode(this.atom);
 
         if (this.atomConfig) {
-            // TODO -- find out about other client events
-            // this.status({fill:"#f5c265", text: "Connecting...", shape: "hexagon"});
+            this.status({fill:"#f5c265", shape:'dot'});
 
             this.client = new helium.Helium();
 
@@ -46,24 +45,28 @@ module.exports = function(RED) {
 
             this.client.on('message', function(data){
                 var msg = {atom_mac: node.atomConfig.mac};
-
-                console.log(data.message)
-
-                var l = data.message.length;
                 try {
                     msg.payload = msgpack.unpack(new Buffer(data.message));
                     node.send(msg);
-                    node.status({text:l +" b->o "+ JSON.stringify(msg.payload).length});
+                    // node.status({fill: "#44b6eb", shape: "dot"});
+
                 }
                 catch (e) {
-                    node.warn("Bad decode: "+e);
-                    node.status({text:"not a msgpack buffer"});
+                    // node.status({fill: "#f5c265", shape: "dot"});
                 }
             });
 
-            this.client.subscribe(this.atomConfig.mac, this.atomConfig.token);
+
+            try {
+                this.client.subscribe(this.atomConfig.mac, this.atomConfig.token);
+                // node.status({fill:"#44b6eb"});
+            } catch (e) {
+                node.warn("Unable to subscribe to atom :: " + e.message);
+                // node.status({fill:"#f0567f", shape: "dot"});
+            }
 
             this.on("close", function() {
+                node.client.unsubscribe(node.atomConfig.mac);
                 node.client.close();
             });
         } else {
@@ -89,18 +92,20 @@ module.exports = function(RED) {
 
             this.on('input', function (msg) {
                 var packedPayload = msgpack.pack(msg.payload);
-                client.send(node.atomConfig.mac, node.atomConfig.token, packedPayload.toString());
+                try {
+                    node.client.send(node.atomConfig.mac, node.atomConfig.token, packedPayload.toString());
+                    // node.status({color: "#44b6eb", shape: "dot"});
+                } catch(e) {
+                    node.warn("Error sending message: " + e.message);
+                    // node.status({color: "#f0567f", shape: "dot"});
+                }
             });
 
             this.on("close", function() {
                 node.client.close();
             });
         } else {
-            this.error("Node MAC or Token is not configured");
-
-            this.on('input', function(){
-                node.warn("Node MAC or Token is not configured");
-            });
+            this.error("Atom is not configured");
         }
     }    
 
