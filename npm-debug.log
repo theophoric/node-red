@@ -1,0 +1,738 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish', './' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose publish [ './' ]
+5 verbose cache add [ './', null ]
+6 verbose cache add name=undefined spec="./" args=["./",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: './',
+7 verbose parsed url   path: './',
+7 verbose parsed url   href: './' }
+8 silly lockFile 0ee6c175- ./
+9 verbose lock ./ /Users/phaedrus/.npm/0ee6c175-.lock
+10 verbose tar pack [ '/var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/tmp.tgz',
+10 verbose tar pack   './' ]
+11 verbose tarball /var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/tmp.tgz
+12 verbose folder ./
+13 info prepublish node-red@0.10.3
+14 silly lockFile 04cb2bca-tar tar://./
+15 verbose lock tar://./ /Users/phaedrus/.npm/04cb2bca-tar.lock
+16 silly lockFile 91583ab8-20073-0-7283536423929036-tmp-tgz tar:///var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/tmp.tgz
+17 verbose lock tar:///var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/tmp.tgz /Users/phaedrus/.npm/91583ab8-20073-0-7283536423929036-tmp-tgz.lock
+18 silly lockFile 04cb2bca-tar tar://./
+19 silly lockFile 04cb2bca-tar tar://./
+20 silly lockFile 91583ab8-20073-0-7283536423929036-tmp-tgz tar:///var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/tmp.tgz
+21 silly lockFile 91583ab8-20073-0-7283536423929036-tmp-tgz tar:///var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/tmp.tgz
+22 verbose tar unpack /var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/tmp.tgz
+23 silly lockFile 2b2d9e79-20073-0-7283536423929036-package tar:///var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/package
+24 verbose lock tar:///var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/package /Users/phaedrus/.npm/2b2d9e79-20073-0-7283536423929036-package.lock
+25 silly lockFile 91583ab8-20073-0-7283536423929036-tmp-tgz tar:///var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/tmp.tgz
+26 verbose lock tar:///var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/tmp.tgz /Users/phaedrus/.npm/91583ab8-20073-0-7283536423929036-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm extractEntry .npmignore
+30 silly gunzTarPerm extractEntry README.md
+31 silly gunzTarPerm extractEntry LICENSE
+32 silly gunzTarPerm extractEntry Gruntfile.js
+33 silly gunzTarPerm extractEntry settings.js
+34 silly gunzTarPerm extractEntry red.js
+35 silly gunzTarPerm extractEntry CONTRIBUTING.md
+36 silly gunzTarPerm extractEntry .nodemonignore
+37 silly gunzTarPerm extractEntry test/_spec.js
+38 silly gunzTarPerm extractEntry test/nodes/helper.js
+39 silly gunzTarPerm extractEntry test/nodes/core/core/20-inject_spec.js
+40 silly gunzTarPerm extractEntry test/nodes/core/core/58-debug_spec.js
+41 silly gunzTarPerm extractEntry test/nodes/core/core/80-function_spec.js
+42 silly gunzTarPerm extractEntry test/nodes/core/core/80-template_spec.js
+43 silly gunzTarPerm extractEntry test/nodes/core/core/89-delay_spec.js
+44 silly gunzTarPerm extractEntry test/nodes/core/core/90-comment_spec.js
+45 silly gunzTarPerm extractEntry test/nodes/core/io/22-websocket_spec.js
+46 silly gunzTarPerm extractEntry test/nodes/core/logic/10-switch_spec.js
+47 silly gunzTarPerm extractEntry test/nodes/core/logic/15-change_spec.js
+48 silly gunzTarPerm extractEntry test/nodes/core/logic/16-range_spec.js
+49 silly gunzTarPerm extractEntry test/nodes/core/parsers/70-HTML_spec.js
+50 silly gunzTarPerm extractEntry test/nodes/core/parsers/70-JSON_spec.js
+51 silly gunzTarPerm extractEntry test/nodes/core/parsers/70-XML_spec.js
+52 silly gunzTarPerm extractEntry test/nodes/core/storage/28-tail_spec.js
+53 silly gunzTarPerm extractEntry test/red/comms_spec.js
+54 silly gunzTarPerm extractEntry test/red/events_spec.js
+55 silly gunzTarPerm extractEntry test/red/log_spec.js
+56 silly gunzTarPerm extractEntry test/red/red_spec.js
+57 silly gunzTarPerm extractEntry test/red/server_spec.js
+58 silly gunzTarPerm extractEntry test/red/settings_spec.js
+59 silly gunzTarPerm extractEntry test/red/util_spec.js
+60 silly gunzTarPerm extractEntry test/red/api/flows_spec.js
+61 silly gunzTarPerm extractEntry test/red/api/index_spec.js
+62 silly gunzTarPerm extractEntry test/red/api/info_spec.js
+63 silly gunzTarPerm extractEntry test/red/api/library_spec.js
+64 silly gunzTarPerm extractEntry test/red/api/nodes_spec.js
+65 silly gunzTarPerm extractEntry test/red/api/ui_spec.js
+66 silly gunzTarPerm extractEntry test/red/api/auth/clients_spec.js
+67 silly gunzTarPerm extractEntry test/red/api/auth/index_spec.js
+68 silly gunzTarPerm extractEntry test/red/api/auth/permissions_spec.js
+69 silly gunzTarPerm extractEntry test/red/api/auth/strategies_spec.js
+70 silly gunzTarPerm extractEntry test/red/api/auth/users_spec.js
+71 silly gunzTarPerm extractEntry test/red/api/auth/tokens/index_spec.js
+72 silly gunzTarPerm extractEntry test/red/api/auth/tokens/localfilesystem_spec.js
+73 silly gunzTarPerm extractEntry test/red/nodes/Flow_spec.js
+74 silly gunzTarPerm extractEntry test/red/nodes/Node_spec.js
+75 silly gunzTarPerm extractEntry test/red/nodes/credentials_spec.js
+76 silly gunzTarPerm extractEntry test/red/nodes/flows_spec.js
+77 silly gunzTarPerm extractEntry test/red/nodes/index_spec.js
+78 silly gunzTarPerm extractEntry test/red/nodes/registry_spec.js
+79 silly gunzTarPerm extractEntry test/red/nodes/resources/DuplicateTestNode/TestNode1.js
+80 silly gunzTarPerm extractEntry test/red/nodes/resources/DuplicateTestNode/TestNode1.html
+81 silly gunzTarPerm extractEntry test/red/nodes/resources/MultipleNodes1/MultipleNodes1.js
+82 silly gunzTarPerm extractEntry test/red/nodes/resources/MultipleNodes1/MultipleNodes1.html
+83 silly gunzTarPerm extractEntry test/red/nodes/resources/NestedDirectoryNode/NestedNode/NestedNode.js
+84 silly gunzTarPerm extractEntry test/red/nodes/resources/NestedDirectoryNode/NestedNode/NestedNode.html
+85 silly gunzTarPerm extractEntry test/red/nodes/resources/NestedDirectoryNode/NestedNode/icons/file.txt
+86 silly gunzTarPerm extractEntry test/red/nodes/resources/NestedDirectoryNode/NestedNode/lib/ShouldNotLoad.js
+87 silly gunzTarPerm extractEntry test/red/nodes/resources/NestedDirectoryNode/NestedNode/lib/ShouldNotLoad.html
+88 silly gunzTarPerm extractEntry test/red/nodes/resources/NestedDirectoryNode/NestedNode/test/ShouldNotLoad.js
+89 silly gunzTarPerm extractEntry test/red/nodes/resources/NestedDirectoryNode/NestedNode/test/ShouldNotLoad.html
+90 silly gunzTarPerm extractEntry test/red/nodes/resources/TestNode1/TestNode1.js
+91 silly gunzTarPerm extractEntry test/red/nodes/resources/TestNode1/TestNode1.html
+92 silly gunzTarPerm extractEntry test/red/nodes/resources/TestNode2/TestNode2.js
+93 silly gunzTarPerm extractEntry test/red/nodes/resources/TestNode2/TestNode2.html
+94 silly gunzTarPerm extractEntry test/red/nodes/resources/TestNode3/TestNode3.js
+95 silly gunzTarPerm extractEntry test/red/nodes/resources/TestNode3/TestNode3.html
+96 silly gunzTarPerm extractEntry test/red/storage/index_spec.js
+97 silly gunzTarPerm extractEntry test/red/storage/localfilesystem_spec.js
+98 silly gunzTarPerm extractEntry test/resources/70-HTML-test-file.html
+99 silly gunzTarPerm extractEntry test/resources/icons/test_icon.png
+100 silly gunzTarPerm extractEntry nodes/0-helium.js
+101 silly gunzTarPerm modified mode [ 'nodes/0-helium.js', 436, 420 ]
+102 silly gunzTarPerm extractEntry nodes/0-helium.html
+103 silly gunzTarPerm modified mode [ 'nodes/0-helium.html', 436, 420 ]
+104 silly gunzTarPerm extractEntry nodes/99-sample.html.demo
+105 silly gunzTarPerm extractEntry nodes/99-sample.js.demo
+106 silly gunzTarPerm extractEntry nodes/core/analysis/72-sentiment.js
+107 silly gunzTarPerm extractEntry nodes/core/analysis/72-sentiment.html
+108 silly gunzTarPerm extractEntry nodes/core/core/98-unknown.js
+109 silly gunzTarPerm extractEntry nodes/core/core/90-comment.js
+110 silly gunzTarPerm extractEntry nodes/core/core/58-debug.js
+111 silly gunzTarPerm extractEntry nodes/core/core/89-trigger.js
+112 silly gunzTarPerm extractEntry nodes/core/core/75-exec.js
+113 silly gunzTarPerm extractEntry nodes/core/core/89-delay.js
+114 silly gunzTarPerm extractEntry nodes/core/core/80-function.js
+115 silly gunzTarPerm extractEntry nodes/core/core/20-inject.js
+116 silly gunzTarPerm extractEntry nodes/core/core/80-template.js
+117 silly gunzTarPerm extractEntry nodes/core/core/80-template.html
+118 silly gunzTarPerm extractEntry nodes/core/core/89-delay.html
+119 silly gunzTarPerm extractEntry nodes/core/core/80-function.html
+120 silly gunzTarPerm extractEntry nodes/core/core/89-trigger.html
+121 silly gunzTarPerm extractEntry nodes/core/core/75-exec.html
+122 silly gunzTarPerm extractEntry nodes/core/core/90-comment.html
+123 silly gunzTarPerm extractEntry nodes/core/core/58-debug.html
+124 silly gunzTarPerm extractEntry nodes/core/core/98-unknown.html
+125 silly gunzTarPerm extractEntry nodes/core/core/20-inject.html
+126 silly gunzTarPerm extractEntry nodes/core/hardware/35-arduino.js
+127 silly gunzTarPerm extractEntry nodes/core/hardware/36-rpi-gpio.js
+128 silly gunzTarPerm extractEntry nodes/core/hardware/35-arduino.html
+129 silly gunzTarPerm extractEntry nodes/core/hardware/36-rpi-gpio.html
+130 silly gunzTarPerm extractEntry nodes/core/hardware/nrgpio
+131 silly gunzTarPerm extractEntry nodes/core/hardware/nrgpio.py
+132 silly gunzTarPerm extractEntry nodes/core/io/23-watch.js
+133 silly gunzTarPerm extractEntry nodes/core/io/21-httpin.js
+134 silly gunzTarPerm extractEntry nodes/core/io/22-websocket.js
+135 silly gunzTarPerm extractEntry nodes/core/io/10-mqtt.js
+136 silly gunzTarPerm extractEntry nodes/core/io/25-serial.js
+137 silly gunzTarPerm extractEntry nodes/core/io/31-tcpin.js
+138 silly gunzTarPerm extractEntry nodes/core/io/32-udp.js
+139 silly gunzTarPerm extractEntry nodes/core/io/10-mqtt.html
+140 silly gunzTarPerm extractEntry nodes/core/io/25-serial.html
+141 silly gunzTarPerm extractEntry nodes/core/io/22-websocket.html
+142 silly gunzTarPerm extractEntry nodes/core/io/31-tcpin.html
+143 silly gunzTarPerm extractEntry nodes/core/io/21-httpin.html
+144 silly gunzTarPerm extractEntry nodes/core/io/32-udp.html
+145 silly gunzTarPerm extractEntry nodes/core/io/23-watch.html
+146 silly gunzTarPerm extractEntry nodes/core/io/lib/mqtt.js
+147 silly gunzTarPerm extractEntry nodes/core/io/lib/mqttConnectionPool.js
+148 silly gunzTarPerm extractEntry nodes/core/logic/10-switch.js
+149 silly gunzTarPerm extractEntry nodes/core/logic/15-change.js
+150 silly gunzTarPerm extractEntry nodes/core/logic/16-range.js
+151 silly gunzTarPerm extractEntry nodes/core/logic/10-switch.html
+152 silly gunzTarPerm extractEntry nodes/core/logic/15-change.html
+153 silly gunzTarPerm extractEntry nodes/core/logic/16-range.html
+154 silly gunzTarPerm extractEntry nodes/core/parsers/70-CSV.js
+155 silly gunzTarPerm extractEntry nodes/core/parsers/70-HTML.js
+156 silly gunzTarPerm extractEntry nodes/core/parsers/70-JSON.js
+157 silly gunzTarPerm extractEntry nodes/core/parsers/70-XML.js
+158 silly gunzTarPerm extractEntry nodes/core/parsers/70-CSV.html
+159 silly gunzTarPerm extractEntry nodes/core/parsers/70-HTML.html
+160 silly gunzTarPerm extractEntry nodes/core/parsers/70-JSON.html
+161 silly gunzTarPerm extractEntry nodes/core/parsers/70-XML.html
+162 silly gunzTarPerm extractEntry nodes/core/social/27-twitter.js
+163 silly gunzTarPerm extractEntry nodes/core/social/32-feedparse.js
+164 silly gunzTarPerm extractEntry nodes/core/social/61-email.js
+165 silly gunzTarPerm extractEntry nodes/core/social/91-irc.js
+166 silly gunzTarPerm extractEntry nodes/core/social/27-twitter.html
+167 silly gunzTarPerm extractEntry nodes/core/social/32-feedparse.html
+168 silly gunzTarPerm extractEntry nodes/core/social/61-email.html
+169 silly gunzTarPerm extractEntry nodes/core/social/91-irc.html
+170 silly gunzTarPerm extractEntry nodes/core/storage/28-tail.js
+171 silly gunzTarPerm extractEntry nodes/core/storage/50-file.js
+172 silly gunzTarPerm extractEntry nodes/core/storage/65-redisout.js
+173 silly gunzTarPerm extractEntry nodes/core/storage/66-mongodb.js
+174 silly gunzTarPerm extractEntry nodes/core/storage/28-tail.html
+175 silly gunzTarPerm extractEntry nodes/core/storage/50-file.html
+176 silly gunzTarPerm extractEntry nodes/core/storage/65-redisout.html
+177 silly gunzTarPerm extractEntry nodes/core/storage/66-mongodb.html
+178 silly gunzTarPerm extractEntry INSTALL.md
+179 silly gunzTarPerm extractEntry public/d3.v3.min.js
+180 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png
+181 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/animated-overlay.gif
+182 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-bg_flat_75_ffffff_40x100.png
+183 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png
+184 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-bg_glass_65_ffffff_1x400.png
+185 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-bg_glass_75_dadada_1x400.png
+186 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png
+187 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png
+188 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+189 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-icons_222222_256x240.png
+190 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-icons_2e83ff_256x240.png
+191 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-icons_454545_256x240.png
+192 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-icons_888888_256x240.png
+193 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-icons_cd0a0a_256x240.png
+194 silly gunzTarPerm extractEntry public/jquery/css/smoothness/jquery-ui-1.10.3.custom.min.css
+195 silly gunzTarPerm extractEntry public/jquery/js/jquery-1.11.1.min.js
+196 silly gunzTarPerm extractEntry public/jquery/js/jquery-ui-1.10.3.custom.min.js
+197 silly gunzTarPerm extractEntry public/jquery/js/jquery.ui.touch-punch.min.js
+198 silly gunzTarPerm extractEntry public/favicon.ico
+199 silly gunzTarPerm extractEntry public/font-awesome/css/font-awesome.min.css
+200 silly gunzTarPerm extractEntry public/font-awesome/fonts/FontAwesome.otf
+201 silly gunzTarPerm extractEntry public/font-awesome/fonts/fontawesome-webfont.eot
+202 silly gunzTarPerm extractEntry public/font-awesome/fonts/fontawesome-webfont.svg
+203 silly gunzTarPerm extractEntry public/font-awesome/fonts/fontawesome-webfont.ttf
+204 silly gunzTarPerm extractEntry public/font-awesome/fonts/fontawesome-webfont.woff
+205 silly gunzTarPerm extractEntry public/font-awesome/fonts/fontawesome-webfont.woff2
+206 silly gunzTarPerm extractEntry public/grip.png
+207 silly gunzTarPerm extractEntry public/icons/light.png
+208 silly gunzTarPerm extractEntry public/icons/alert.png
+209 silly gunzTarPerm extractEntry public/icons/arrow-in.png
+210 silly gunzTarPerm extractEntry public/icons/bluetooth.png
+211 silly gunzTarPerm extractEntry public/icons/bridge-dash.png
+212 silly gunzTarPerm extractEntry public/icons/bridge.png
+213 silly gunzTarPerm extractEntry public/icons/comment.png
+214 silly gunzTarPerm extractEntry public/icons/db.png
+215 silly gunzTarPerm extractEntry public/icons/debug.png
+216 silly gunzTarPerm extractEntry public/icons/envelope.png
+217 silly gunzTarPerm extractEntry public/icons/feed.png
+218 silly gunzTarPerm extractEntry public/icons/file.png
+219 silly gunzTarPerm extractEntry public/icons/function.png
+220 silly gunzTarPerm extractEntry public/icons/hash.png
+221 silly gunzTarPerm extractEntry public/icons/helium.png
+222 silly gunzTarPerm extractEntry public/icons/inject.png
+223 silly gunzTarPerm extractEntry public/icons/leveldb.png
+224 silly gunzTarPerm extractEntry public/icons/arduino.png
+225 silly gunzTarPerm extractEntry public/icons/mongodb.png
+226 silly gunzTarPerm extractEntry public/icons/mouse.png
+227 silly gunzTarPerm extractEntry public/icons/node-changed.png
+228 silly gunzTarPerm extractEntry public/icons/node-error.png
+229 silly gunzTarPerm extractEntry public/icons/range.png
+230 silly gunzTarPerm extractEntry public/icons/redis.png
+231 silly gunzTarPerm extractEntry public/icons/rpi.png
+232 silly gunzTarPerm extractEntry public/icons/serial.png
+233 silly gunzTarPerm extractEntry public/icons/subflow.png
+234 silly gunzTarPerm extractEntry public/icons/swap.png
+235 silly gunzTarPerm extractEntry public/icons/switch.png
+236 silly gunzTarPerm extractEntry public/icons/template.png
+237 silly gunzTarPerm extractEntry public/icons/timer.png
+238 silly gunzTarPerm extractEntry public/icons/trigger.png
+239 silly gunzTarPerm extractEntry public/icons/twitter.png
+240 silly gunzTarPerm extractEntry public/icons/watch.png
+241 silly gunzTarPerm extractEntry public/icons/white-globe.png
+242 silly gunzTarPerm extractEntry public/images/deploy-flows-o.png
+243 silly gunzTarPerm extractEntry public/images/deploy-flows.png
+244 silly gunzTarPerm extractEntry public/images/deploy-full-o.png
+245 silly gunzTarPerm extractEntry public/images/deploy-full.png
+246 silly gunzTarPerm extractEntry public/images/deploy-nodes-o.png
+247 silly gunzTarPerm extractEntry public/images/deploy-nodes.png
+248 silly gunzTarPerm extractEntry public/index.html
+249 silly gunzTarPerm extractEntry public/bootstrap/css/bootstrap.min.css
+250 silly gunzTarPerm extractEntry public/bootstrap/img/glyphicons-halflings-white.png
+251 silly gunzTarPerm extractEntry public/bootstrap/img/glyphicons-halflings.png
+252 silly gunzTarPerm extractEntry public/bootstrap/js/bootstrap.min.js
+253 silly gunzTarPerm extractEntry public/marked/marked.min.js
+254 silly gunzTarPerm extractEntry public/node-red-256.png
+255 silly gunzTarPerm extractEntry public/node-red.png
+256 silly gunzTarPerm extractEntry public/orion/built-editor.min.js
+257 silly gunzTarPerm extractEntry public/orion/built-editor.css
+258 silly gunzTarPerm extractEntry public/pw_maze_white.png
+259 silly gunzTarPerm extractEntry public/red/comms.js
+260 silly gunzTarPerm extractEntry public/red/history.js
+261 silly gunzTarPerm extractEntry public/red/main.js
+262 silly gunzTarPerm extractEntry public/red/nodes.js
+263 silly gunzTarPerm extractEntry public/red/settings.js
+264 silly gunzTarPerm extractEntry public/red/user.js
+265 silly gunzTarPerm extractEntry public/red/validators.js
+266 silly gunzTarPerm extractEntry public/red/ui/editor.js
+267 silly gunzTarPerm extractEntry public/red/ui/library.js
+268 silly gunzTarPerm extractEntry public/red/ui/menu.js
+269 silly gunzTarPerm extractEntry public/red/ui/notifications.js
+270 silly gunzTarPerm extractEntry public/red/ui/palette.js
+271 silly gunzTarPerm extractEntry public/red/ui/keyboard.js
+272 silly gunzTarPerm extractEntry public/red/ui/state.js
+273 silly gunzTarPerm extractEntry public/red/ui/tab-config.js
+274 silly gunzTarPerm extractEntry public/red/ui/tab-info.js
+275 silly gunzTarPerm extractEntry public/red/ui/tabs.js
+276 silly gunzTarPerm extractEntry public/red/ui/view.js
+277 silly gunzTarPerm extractEntry public/red/ui/sidebar.js
+278 silly gunzTarPerm extractEntry public/red/ui/touch/radialMenu.js
+279 silly gunzTarPerm extractEntry public/spin.svg
+280 silly gunzTarPerm extractEntry public/style.css
+281 silly gunzTarPerm extractEntry red/comms.js
+282 silly gunzTarPerm extractEntry red/events.js
+283 silly gunzTarPerm extractEntry red/log.js
+284 silly gunzTarPerm extractEntry red/red.js
+285 silly gunzTarPerm extractEntry red/server.js
+286 silly gunzTarPerm extractEntry red/settings.js
+287 silly gunzTarPerm extractEntry red/util.js
+288 silly gunzTarPerm extractEntry red/api/flows.js
+289 silly gunzTarPerm extractEntry red/api/index.js
+290 silly gunzTarPerm extractEntry red/api/info.js
+291 silly gunzTarPerm extractEntry red/api/library.js
+292 silly gunzTarPerm extractEntry red/api/nodes.js
+293 silly gunzTarPerm extractEntry red/api/ui.js
+294 silly gunzTarPerm extractEntry red/api/auth/clients.js
+295 silly gunzTarPerm extractEntry red/api/auth/index.js
+296 silly gunzTarPerm extractEntry red/api/auth/permissions.js
+297 silly gunzTarPerm extractEntry red/api/auth/strategies.js
+298 silly gunzTarPerm extractEntry red/api/auth/users.js
+299 silly gunzTarPerm extractEntry red/api/auth/tokens/index.js
+300 silly gunzTarPerm extractEntry red/api/auth/tokens/localfilesystem.js
+301 silly gunzTarPerm extractEntry red/nodes/Flow.js
+302 silly gunzTarPerm extractEntry red/nodes/Node.js
+303 silly gunzTarPerm extractEntry red/nodes/credentials.js
+304 silly gunzTarPerm extractEntry red/nodes/flows.js
+305 silly gunzTarPerm extractEntry red/nodes/index.js
+306 silly gunzTarPerm extractEntry red/nodes/registry.js
+307 silly gunzTarPerm extractEntry red/storage/index.js
+308 silly gunzTarPerm extractEntry red/storage/localfilesystem.js
+309 silly gunzTarPerm extractEntry .travis.yml
+310 silly lockFile 2b2d9e79-20073-0-7283536423929036-package tar:///var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/package
+311 silly lockFile 2b2d9e79-20073-0-7283536423929036-package tar:///var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/package
+312 silly lockFile 91583ab8-20073-0-7283536423929036-tmp-tgz tar:///var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/tmp.tgz
+313 silly lockFile 91583ab8-20073-0-7283536423929036-tmp-tgz tar:///var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/tmp.tgz
+314 verbose tar pack [ '/Users/phaedrus/.npm/node-red/0.10.3/package.tgz',
+314 verbose tar pack   '/var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/package' ]
+315 verbose tarball /Users/phaedrus/.npm/node-red/0.10.3/package.tgz
+316 verbose folder /var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/package
+317 silly lockFile 2b2d9e79-20073-0-7283536423929036-package tar:///var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/package
+318 verbose lock tar:///var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/package /Users/phaedrus/.npm/2b2d9e79-20073-0-7283536423929036-package.lock
+319 silly lockFile 5310edfb--npm-node-red-0-10-3-package-tgz tar:///Users/phaedrus/.npm/node-red/0.10.3/package.tgz
+320 verbose lock tar:///Users/phaedrus/.npm/node-red/0.10.3/package.tgz /Users/phaedrus/.npm/5310edfb--npm-node-red-0-10-3-package-tgz.lock
+321 silly lockFile 2b2d9e79-20073-0-7283536423929036-package tar:///var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/package
+322 silly lockFile 2b2d9e79-20073-0-7283536423929036-package tar:///var/folders/v3/k08kb1xj4fv0jf04c7ns7f_40000gn/T/npm-4949-kLKE1kYu/1424982020073-0.7283536423929036/package
+323 silly lockFile 5310edfb--npm-node-red-0-10-3-package-tgz tar:///Users/phaedrus/.npm/node-red/0.10.3/package.tgz
+324 silly lockFile 5310edfb--npm-node-red-0-10-3-package-tgz tar:///Users/phaedrus/.npm/node-red/0.10.3/package.tgz
+325 silly lockFile 65c16b50-drus-npm-node-red-0-10-3-package /Users/phaedrus/.npm/node-red/0.10.3/package
+326 verbose lock /Users/phaedrus/.npm/node-red/0.10.3/package /Users/phaedrus/.npm/65c16b50-drus-npm-node-red-0-10-3-package.lock
+327 silly lockFile 65c16b50-drus-npm-node-red-0-10-3-package /Users/phaedrus/.npm/node-red/0.10.3/package
+328 silly lockFile 65c16b50-drus-npm-node-red-0-10-3-package /Users/phaedrus/.npm/node-red/0.10.3/package
+329 verbose tar unpack /Users/phaedrus/.npm/node-red/0.10.3/package.tgz
+330 silly lockFile 71773e5a-drus-npm-node-red-0-10-3-package tar:///Users/phaedrus/.npm/node-red/0.10.3/package
+331 verbose lock tar:///Users/phaedrus/.npm/node-red/0.10.3/package /Users/phaedrus/.npm/71773e5a-drus-npm-node-red-0-10-3-package.lock
+332 silly lockFile 5310edfb--npm-node-red-0-10-3-package-tgz tar:///Users/phaedrus/.npm/node-red/0.10.3/package.tgz
+333 verbose lock tar:///Users/phaedrus/.npm/node-red/0.10.3/package.tgz /Users/phaedrus/.npm/5310edfb--npm-node-red-0-10-3-package-tgz.lock
+334 silly gunzTarPerm modes [ '755', '644' ]
+335 silly gunzTarPerm extractEntry package.json
+336 silly gunzTarPerm extractEntry .npmignore
+337 silly gunzTarPerm extractEntry README.md
+338 silly gunzTarPerm extractEntry LICENSE
+339 silly gunzTarPerm extractEntry Gruntfile.js
+340 silly gunzTarPerm extractEntry red.js
+341 silly gunzTarPerm extractEntry settings.js
+342 silly gunzTarPerm extractEntry CONTRIBUTING.md
+343 silly gunzTarPerm extractEntry nodes/0-helium.js
+344 silly gunzTarPerm extractEntry nodes/0-helium.html
+345 silly gunzTarPerm extractEntry nodes/99-sample.html.demo
+346 silly gunzTarPerm extractEntry nodes/99-sample.js.demo
+347 silly gunzTarPerm extractEntry nodes/core/analysis/72-sentiment.js
+348 silly gunzTarPerm extractEntry nodes/core/analysis/72-sentiment.html
+349 silly gunzTarPerm extractEntry nodes/core/core/98-unknown.js
+350 silly gunzTarPerm extractEntry nodes/core/core/90-comment.js
+351 silly gunzTarPerm extractEntry nodes/core/core/58-debug.js
+352 silly gunzTarPerm extractEntry nodes/core/core/89-trigger.js
+353 silly gunzTarPerm extractEntry nodes/core/core/75-exec.js
+354 silly gunzTarPerm extractEntry nodes/core/core/89-delay.js
+355 silly gunzTarPerm extractEntry nodes/core/core/80-function.js
+356 silly gunzTarPerm extractEntry nodes/core/core/20-inject.js
+357 silly gunzTarPerm extractEntry nodes/core/core/80-template.js
+358 silly gunzTarPerm extractEntry nodes/core/core/80-template.html
+359 silly gunzTarPerm extractEntry nodes/core/core/89-delay.html
+360 silly gunzTarPerm extractEntry nodes/core/core/80-function.html
+361 silly gunzTarPerm extractEntry nodes/core/core/89-trigger.html
+362 silly gunzTarPerm extractEntry nodes/core/core/75-exec.html
+363 silly gunzTarPerm extractEntry nodes/core/core/90-comment.html
+364 silly gunzTarPerm extractEntry nodes/core/core/58-debug.html
+365 silly gunzTarPerm extractEntry nodes/core/core/98-unknown.html
+366 silly gunzTarPerm extractEntry nodes/core/core/20-inject.html
+367 silly gunzTarPerm extractEntry nodes/core/hardware/35-arduino.js
+368 silly gunzTarPerm extractEntry nodes/core/hardware/36-rpi-gpio.js
+369 silly gunzTarPerm extractEntry nodes/core/hardware/35-arduino.html
+370 silly gunzTarPerm extractEntry nodes/core/hardware/36-rpi-gpio.html
+371 silly gunzTarPerm extractEntry nodes/core/hardware/nrgpio
+372 silly gunzTarPerm extractEntry nodes/core/hardware/nrgpio.py
+373 silly gunzTarPerm extractEntry nodes/core/io/23-watch.js
+374 silly gunzTarPerm extractEntry nodes/core/io/21-httpin.js
+375 silly gunzTarPerm extractEntry nodes/core/io/22-websocket.js
+376 silly gunzTarPerm extractEntry nodes/core/io/10-mqtt.js
+377 silly gunzTarPerm extractEntry nodes/core/io/25-serial.js
+378 silly gunzTarPerm extractEntry nodes/core/io/31-tcpin.js
+379 silly gunzTarPerm extractEntry nodes/core/io/32-udp.js
+380 silly gunzTarPerm extractEntry nodes/core/io/10-mqtt.html
+381 silly gunzTarPerm extractEntry nodes/core/io/25-serial.html
+382 silly gunzTarPerm extractEntry nodes/core/io/22-websocket.html
+383 silly gunzTarPerm extractEntry nodes/core/io/31-tcpin.html
+384 silly gunzTarPerm extractEntry nodes/core/io/21-httpin.html
+385 silly gunzTarPerm extractEntry nodes/core/io/32-udp.html
+386 silly gunzTarPerm extractEntry nodes/core/io/23-watch.html
+387 silly gunzTarPerm extractEntry nodes/core/io/lib/mqtt.js
+388 silly gunzTarPerm extractEntry nodes/core/io/lib/mqttConnectionPool.js
+389 silly gunzTarPerm extractEntry nodes/core/logic/10-switch.js
+390 silly gunzTarPerm extractEntry nodes/core/logic/15-change.js
+391 silly gunzTarPerm extractEntry nodes/core/logic/16-range.js
+392 silly gunzTarPerm extractEntry nodes/core/logic/10-switch.html
+393 silly gunzTarPerm extractEntry nodes/core/logic/15-change.html
+394 silly gunzTarPerm extractEntry nodes/core/logic/16-range.html
+395 silly gunzTarPerm extractEntry nodes/core/parsers/70-CSV.js
+396 silly gunzTarPerm extractEntry nodes/core/parsers/70-HTML.js
+397 silly gunzTarPerm extractEntry nodes/core/parsers/70-JSON.js
+398 silly gunzTarPerm extractEntry nodes/core/parsers/70-XML.js
+399 silly gunzTarPerm extractEntry nodes/core/parsers/70-CSV.html
+400 silly gunzTarPerm extractEntry nodes/core/parsers/70-HTML.html
+401 silly gunzTarPerm extractEntry nodes/core/parsers/70-JSON.html
+402 silly gunzTarPerm extractEntry nodes/core/parsers/70-XML.html
+403 silly gunzTarPerm extractEntry nodes/core/social/27-twitter.js
+404 silly gunzTarPerm extractEntry nodes/core/social/32-feedparse.js
+405 silly gunzTarPerm extractEntry nodes/core/social/61-email.js
+406 silly gunzTarPerm extractEntry nodes/core/social/91-irc.js
+407 silly gunzTarPerm extractEntry nodes/core/social/27-twitter.html
+408 silly gunzTarPerm extractEntry nodes/core/social/32-feedparse.html
+409 silly gunzTarPerm extractEntry nodes/core/social/61-email.html
+410 silly gunzTarPerm extractEntry nodes/core/social/91-irc.html
+411 silly gunzTarPerm extractEntry nodes/core/storage/28-tail.js
+412 silly gunzTarPerm extractEntry nodes/core/storage/50-file.js
+413 silly gunzTarPerm extractEntry nodes/core/storage/65-redisout.js
+414 silly gunzTarPerm extractEntry nodes/core/storage/66-mongodb.js
+415 silly gunzTarPerm extractEntry nodes/core/storage/28-tail.html
+416 silly gunzTarPerm extractEntry nodes/core/storage/50-file.html
+417 silly gunzTarPerm extractEntry nodes/core/storage/65-redisout.html
+418 silly gunzTarPerm extractEntry nodes/core/storage/66-mongodb.html
+419 silly gunzTarPerm extractEntry .nodemonignore
+420 silly gunzTarPerm extractEntry public/d3.v3.min.js
+421 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png
+422 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/animated-overlay.gif
+423 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-bg_flat_75_ffffff_40x100.png
+424 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png
+425 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-bg_glass_65_ffffff_1x400.png
+426 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-bg_glass_75_dadada_1x400.png
+427 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png
+428 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png
+429 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+430 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-icons_222222_256x240.png
+431 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-icons_2e83ff_256x240.png
+432 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-icons_454545_256x240.png
+433 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-icons_888888_256x240.png
+434 silly gunzTarPerm extractEntry public/jquery/css/smoothness/images/ui-icons_cd0a0a_256x240.png
+435 silly gunzTarPerm extractEntry public/jquery/css/smoothness/jquery-ui-1.10.3.custom.min.css
+436 silly gunzTarPerm extractEntry public/jquery/js/jquery-1.11.1.min.js
+437 silly gunzTarPerm extractEntry public/jquery/js/jquery-ui-1.10.3.custom.min.js
+438 silly gunzTarPerm extractEntry public/jquery/js/jquery.ui.touch-punch.min.js
+439 silly gunzTarPerm extractEntry public/favicon.ico
+440 silly gunzTarPerm extractEntry public/font-awesome/css/font-awesome.min.css
+441 silly gunzTarPerm extractEntry public/font-awesome/fonts/FontAwesome.otf
+442 silly gunzTarPerm extractEntry public/font-awesome/fonts/fontawesome-webfont.eot
+443 silly gunzTarPerm extractEntry public/font-awesome/fonts/fontawesome-webfont.svg
+444 silly gunzTarPerm extractEntry public/font-awesome/fonts/fontawesome-webfont.ttf
+445 silly gunzTarPerm extractEntry public/font-awesome/fonts/fontawesome-webfont.woff
+446 silly gunzTarPerm extractEntry public/font-awesome/fonts/fontawesome-webfont.woff2
+447 silly gunzTarPerm extractEntry public/grip.png
+448 silly gunzTarPerm extractEntry public/icons/light.png
+449 silly gunzTarPerm extractEntry public/icons/alert.png
+450 silly gunzTarPerm extractEntry public/icons/arrow-in.png
+451 silly gunzTarPerm extractEntry public/icons/bluetooth.png
+452 silly gunzTarPerm extractEntry public/icons/bridge-dash.png
+453 silly gunzTarPerm extractEntry public/icons/bridge.png
+454 silly gunzTarPerm extractEntry public/icons/comment.png
+455 silly gunzTarPerm extractEntry public/icons/db.png
+456 silly gunzTarPerm extractEntry public/icons/debug.png
+457 silly gunzTarPerm extractEntry public/icons/envelope.png
+458 silly gunzTarPerm extractEntry public/icons/feed.png
+459 silly gunzTarPerm extractEntry public/icons/file.png
+460 silly gunzTarPerm extractEntry public/icons/function.png
+461 silly gunzTarPerm extractEntry public/icons/hash.png
+462 silly gunzTarPerm extractEntry public/icons/helium.png
+463 silly gunzTarPerm extractEntry public/icons/inject.png
+464 silly gunzTarPerm extractEntry public/icons/leveldb.png
+465 silly gunzTarPerm extractEntry public/icons/arduino.png
+466 silly gunzTarPerm extractEntry public/icons/mongodb.png
+467 silly gunzTarPerm extractEntry public/icons/mouse.png
+468 silly gunzTarPerm extractEntry public/icons/node-changed.png
+469 silly gunzTarPerm extractEntry public/icons/node-error.png
+470 silly gunzTarPerm extractEntry public/icons/range.png
+471 silly gunzTarPerm extractEntry public/icons/redis.png
+472 silly gunzTarPerm extractEntry public/icons/rpi.png
+473 silly gunzTarPerm extractEntry public/icons/serial.png
+474 silly gunzTarPerm extractEntry public/icons/subflow.png
+475 silly gunzTarPerm extractEntry public/icons/swap.png
+476 silly gunzTarPerm extractEntry public/icons/switch.png
+477 silly gunzTarPerm extractEntry public/icons/template.png
+478 silly gunzTarPerm extractEntry public/icons/timer.png
+479 silly gunzTarPerm extractEntry public/icons/trigger.png
+480 silly gunzTarPerm extractEntry public/icons/twitter.png
+481 silly gunzTarPerm extractEntry public/icons/watch.png
+482 silly gunzTarPerm extractEntry public/icons/white-globe.png
+483 silly gunzTarPerm extractEntry public/images/deploy-flows-o.png
+484 silly gunzTarPerm extractEntry public/images/deploy-flows.png
+485 silly gunzTarPerm extractEntry public/images/deploy-full-o.png
+486 silly gunzTarPerm extractEntry public/images/deploy-full.png
+487 silly gunzTarPerm extractEntry public/images/deploy-nodes-o.png
+488 silly gunzTarPerm extractEntry public/images/deploy-nodes.png
+489 silly gunzTarPerm extractEntry public/index.html
+490 silly gunzTarPerm extractEntry public/bootstrap/css/bootstrap.min.css
+491 silly gunzTarPerm extractEntry public/bootstrap/img/glyphicons-halflings-white.png
+492 silly gunzTarPerm extractEntry public/bootstrap/img/glyphicons-halflings.png
+493 silly gunzTarPerm extractEntry public/bootstrap/js/bootstrap.min.js
+494 silly gunzTarPerm extractEntry public/marked/marked.min.js
+495 silly gunzTarPerm extractEntry public/node-red-256.png
+496 silly gunzTarPerm extractEntry public/node-red.png
+497 silly gunzTarPerm extractEntry public/orion/built-editor.min.js
+498 silly gunzTarPerm extractEntry public/orion/built-editor.css
+499 silly gunzTarPerm extractEntry public/pw_maze_white.png
+500 silly gunzTarPerm extractEntry public/red/comms.js
+501 silly gunzTarPerm extractEntry public/red/history.js
+502 silly gunzTarPerm extractEntry public/red/main.js
+503 silly gunzTarPerm extractEntry public/red/nodes.js
+504 silly gunzTarPerm extractEntry public/red/settings.js
+505 silly gunzTarPerm extractEntry public/red/user.js
+506 silly gunzTarPerm extractEntry public/red/validators.js
+507 silly gunzTarPerm extractEntry public/red/ui/editor.js
+508 silly gunzTarPerm extractEntry public/red/ui/library.js
+509 silly gunzTarPerm extractEntry public/red/ui/menu.js
+510 silly gunzTarPerm extractEntry public/red/ui/notifications.js
+511 silly gunzTarPerm extractEntry public/red/ui/palette.js
+512 silly gunzTarPerm extractEntry public/red/ui/keyboard.js
+513 silly gunzTarPerm extractEntry public/red/ui/state.js
+514 silly gunzTarPerm extractEntry public/red/ui/tab-config.js
+515 silly gunzTarPerm extractEntry public/red/ui/tab-info.js
+516 silly gunzTarPerm extractEntry public/red/ui/tabs.js
+517 silly gunzTarPerm extractEntry public/red/ui/view.js
+518 silly gunzTarPerm extractEntry public/red/ui/sidebar.js
+519 silly gunzTarPerm extractEntry public/red/ui/touch/radialMenu.js
+520 silly gunzTarPerm extractEntry public/spin.svg
+521 silly gunzTarPerm extractEntry public/style.css
+522 silly gunzTarPerm extractEntry red/comms.js
+523 silly gunzTarPerm extractEntry red/events.js
+524 silly gunzTarPerm extractEntry red/log.js
+525 silly gunzTarPerm extractEntry red/red.js
+526 silly gunzTarPerm extractEntry red/server.js
+527 silly gunzTarPerm extractEntry red/settings.js
+528 silly gunzTarPerm extractEntry red/util.js
+529 silly gunzTarPerm extractEntry red/api/flows.js
+530 silly gunzTarPerm extractEntry red/api/index.js
+531 silly gunzTarPerm extractEntry red/api/info.js
+532 silly gunzTarPerm extractEntry red/api/library.js
+533 silly gunzTarPerm extractEntry red/api/nodes.js
+534 silly gunzTarPerm extractEntry red/api/ui.js
+535 silly gunzTarPerm extractEntry red/api/auth/clients.js
+536 silly gunzTarPerm extractEntry red/api/auth/index.js
+537 silly gunzTarPerm extractEntry red/api/auth/permissions.js
+538 silly gunzTarPerm extractEntry red/api/auth/strategies.js
+539 silly gunzTarPerm extractEntry red/api/auth/users.js
+540 silly gunzTarPerm extractEntry red/api/auth/tokens/index.js
+541 silly gunzTarPerm extractEntry red/api/auth/tokens/localfilesystem.js
+542 silly gunzTarPerm extractEntry red/nodes/Flow.js
+543 silly gunzTarPerm extractEntry red/nodes/Node.js
+544 silly gunzTarPerm extractEntry red/nodes/credentials.js
+545 silly gunzTarPerm extractEntry red/nodes/flows.js
+546 silly gunzTarPerm extractEntry red/nodes/index.js
+547 silly gunzTarPerm extractEntry red/nodes/registry.js
+548 silly gunzTarPerm extractEntry red/storage/index.js
+549 silly gunzTarPerm extractEntry red/storage/localfilesystem.js
+550 silly gunzTarPerm extractEntry INSTALL.md
+551 silly gunzTarPerm extractEntry .travis.yml
+552 silly gunzTarPerm extractEntry test/_spec.js
+553 silly gunzTarPerm extractEntry test/nodes/helper.js
+554 silly gunzTarPerm extractEntry test/nodes/core/core/20-inject_spec.js
+555 silly gunzTarPerm extractEntry test/nodes/core/core/58-debug_spec.js
+556 silly gunzTarPerm extractEntry test/nodes/core/core/80-function_spec.js
+557 silly gunzTarPerm extractEntry test/nodes/core/core/80-template_spec.js
+558 silly gunzTarPerm extractEntry test/nodes/core/core/89-delay_spec.js
+559 silly gunzTarPerm extractEntry test/nodes/core/core/90-comment_spec.js
+560 silly gunzTarPerm extractEntry test/nodes/core/io/22-websocket_spec.js
+561 silly gunzTarPerm extractEntry test/nodes/core/logic/10-switch_spec.js
+562 silly gunzTarPerm extractEntry test/nodes/core/logic/15-change_spec.js
+563 silly gunzTarPerm extractEntry test/nodes/core/logic/16-range_spec.js
+564 silly gunzTarPerm extractEntry test/nodes/core/parsers/70-HTML_spec.js
+565 silly gunzTarPerm extractEntry test/nodes/core/parsers/70-JSON_spec.js
+566 silly gunzTarPerm extractEntry test/nodes/core/parsers/70-XML_spec.js
+567 silly gunzTarPerm extractEntry test/nodes/core/storage/28-tail_spec.js
+568 silly gunzTarPerm extractEntry test/red/comms_spec.js
+569 silly gunzTarPerm extractEntry test/red/events_spec.js
+570 silly gunzTarPerm extractEntry test/red/log_spec.js
+571 silly gunzTarPerm extractEntry test/red/red_spec.js
+572 silly gunzTarPerm extractEntry test/red/server_spec.js
+573 silly gunzTarPerm extractEntry test/red/settings_spec.js
+574 silly gunzTarPerm extractEntry test/red/util_spec.js
+575 silly gunzTarPerm extractEntry test/red/api/flows_spec.js
+576 silly gunzTarPerm extractEntry test/red/api/index_spec.js
+577 silly gunzTarPerm extractEntry test/red/api/info_spec.js
+578 silly gunzTarPerm extractEntry test/red/api/library_spec.js
+579 silly gunzTarPerm extractEntry test/red/api/nodes_spec.js
+580 silly gunzTarPerm extractEntry test/red/api/ui_spec.js
+581 silly gunzTarPerm extractEntry test/red/api/auth/clients_spec.js
+582 silly gunzTarPerm extractEntry test/red/api/auth/index_spec.js
+583 silly gunzTarPerm extractEntry test/red/api/auth/permissions_spec.js
+584 silly gunzTarPerm extractEntry test/red/api/auth/strategies_spec.js
+585 silly gunzTarPerm extractEntry test/red/api/auth/users_spec.js
+586 silly gunzTarPerm extractEntry test/red/api/auth/tokens/index_spec.js
+587 silly gunzTarPerm extractEntry test/red/api/auth/tokens/localfilesystem_spec.js
+588 silly gunzTarPerm extractEntry test/red/nodes/Flow_spec.js
+589 silly gunzTarPerm extractEntry test/red/nodes/Node_spec.js
+590 silly gunzTarPerm extractEntry test/red/nodes/credentials_spec.js
+591 silly gunzTarPerm extractEntry test/red/nodes/flows_spec.js
+592 silly gunzTarPerm extractEntry test/red/nodes/index_spec.js
+593 silly gunzTarPerm extractEntry test/red/nodes/registry_spec.js
+594 silly gunzTarPerm extractEntry test/red/nodes/resources/DuplicateTestNode/TestNode1.js
+595 silly gunzTarPerm extractEntry test/red/nodes/resources/DuplicateTestNode/TestNode1.html
+596 silly gunzTarPerm extractEntry test/red/nodes/resources/MultipleNodes1/MultipleNodes1.js
+597 silly gunzTarPerm extractEntry test/red/nodes/resources/MultipleNodes1/MultipleNodes1.html
+598 silly gunzTarPerm extractEntry test/red/nodes/resources/NestedDirectoryNode/NestedNode/NestedNode.js
+599 silly gunzTarPerm extractEntry test/red/nodes/resources/NestedDirectoryNode/NestedNode/NestedNode.html
+600 silly gunzTarPerm extractEntry test/red/nodes/resources/NestedDirectoryNode/NestedNode/icons/file.txt
+601 silly gunzTarPerm extractEntry test/red/nodes/resources/NestedDirectoryNode/NestedNode/lib/ShouldNotLoad.js
+602 silly gunzTarPerm extractEntry test/red/nodes/resources/NestedDirectoryNode/NestedNode/lib/ShouldNotLoad.html
+603 silly gunzTarPerm extractEntry test/red/nodes/resources/NestedDirectoryNode/NestedNode/test/ShouldNotLoad.js
+604 silly gunzTarPerm extractEntry test/red/nodes/resources/NestedDirectoryNode/NestedNode/test/ShouldNotLoad.html
+605 silly gunzTarPerm extractEntry test/red/nodes/resources/TestNode1/TestNode1.js
+606 silly gunzTarPerm extractEntry test/red/nodes/resources/TestNode1/TestNode1.html
+607 silly gunzTarPerm extractEntry test/red/nodes/resources/TestNode2/TestNode2.js
+608 silly gunzTarPerm extractEntry test/red/nodes/resources/TestNode2/TestNode2.html
+609 silly gunzTarPerm extractEntry test/red/nodes/resources/TestNode3/TestNode3.js
+610 silly gunzTarPerm extractEntry test/red/nodes/resources/TestNode3/TestNode3.html
+611 silly gunzTarPerm extractEntry test/red/storage/index_spec.js
+612 silly gunzTarPerm extractEntry test/red/storage/localfilesystem_spec.js
+613 silly gunzTarPerm extractEntry test/resources/70-HTML-test-file.html
+614 silly gunzTarPerm extractEntry test/resources/icons/test_icon.png
+615 silly lockFile 71773e5a-drus-npm-node-red-0-10-3-package tar:///Users/phaedrus/.npm/node-red/0.10.3/package
+616 silly lockFile 71773e5a-drus-npm-node-red-0-10-3-package tar:///Users/phaedrus/.npm/node-red/0.10.3/package
+617 silly lockFile 5310edfb--npm-node-red-0-10-3-package-tgz tar:///Users/phaedrus/.npm/node-red/0.10.3/package.tgz
+618 silly lockFile 5310edfb--npm-node-red-0-10-3-package-tgz tar:///Users/phaedrus/.npm/node-red/0.10.3/package.tgz
+619 verbose chmod /Users/phaedrus/.npm/node-red/0.10.3/package.tgz 644
+620 verbose chown /Users/phaedrus/.npm/node-red/0.10.3/package.tgz [ 501, 20 ]
+621 silly lockFile 0ee6c175- ./
+622 silly lockFile 0ee6c175- ./
+623 silly publish { name: 'node-red',
+623 silly publish   version: '0.10.3',
+623 silly publish   description: 'A visual tool for wiring the Internet of Things',
+623 silly publish   homepage: 'http://nodered.org',
+623 silly publish   license: 'Apache',
+623 silly publish   repository: { type: 'git', url: 'https://github.com/node-red/node-red.git' },
+623 silly publish   main: 'red/red.js',
+623 silly publish   scripts: { start: 'node red.js', test: 'grunt' },
+623 silly publish   bin: { 'node-red': './red.js' },
+623 silly publish   contributors: [ { name: 'Nick O\'Leary' }, { name: 'Dave Conway-Jones' } ],
+623 silly publish   keywords:
+623 silly publish    [ 'editor',
+623 silly publish      'messaging',
+623 silly publish      'iot',
+623 silly publish      'm2m',
+623 silly publish      'pi',
+623 silly publish      'arduino',
+623 silly publish      'beaglebone',
+623 silly publish      'ibm',
+623 silly publish      'flow' ],
+623 silly publish   dependencies:
+623 silly publish    { express: '3.17.2',
+623 silly publish      when: '3.7.2',
+623 silly publish      bcryptjs: '2.1.0',
+623 silly publish      nopt: '3.0.1',
+623 silly publish      mqtt: '0.3.x',
+623 silly publish      ws: '0.7.1',
+623 silly publish      'fs-extra': '0.16.3',
+623 silly publish      clone: '0.2.0',
+623 silly publish      mustache: '1.0.0',
+623 silly publish      cron: '1.0.6',
+623 silly publish      'raw-body': '1.3.2',
+623 silly publish      'twitter-ng': '0.6.2',
+623 silly publish      oauth: '0.9.12',
+623 silly publish      xml2js: '0.4.4',
+623 silly publish      sentiment: '0.2.3',
+623 silly publish      irc: '0.3.9',
+623 silly publish      'follow-redirects': '0.0.3',
+623 silly publish      cors: '2.5.3',
+623 silly publish      mkdirp: '0.5.0',
+623 silly publish      cheerio: '0.18.0',
+623 silly publish      'uglify-js': '2.4.16',
+623 silly publish      nodemailer: '1.3.0',
+623 silly publish      imap: '0.8.14',
+623 silly publish      request: '2.42.0',
+623 silly publish      'on-headers': '1.0.0',
+623 silly publish      'is-utf8': '0.2.0',
+623 silly publish      serialport: '1.4.10',
+623 silly publish      feedparser: '0.19.2',
+623 silly publish      'fs.notify': '0.0.4',
+623 silly publish      passport: '0.2.1',
+623 silly publish      'passport-http-bearer': '1.0.1',
+623 silly publish      'passport-oauth2-client-password': '0.1.2',
+623 silly publish      oauth2orize: '1.0.1',
+623 silly publish      'node-red-node-msgpack': '0.0.4',
+623 silly publish      nodehelium: '^0.2.2',
+623 silly publish      'msgpack-js': '^0.3.0',
+623 silly publish      msgpack: '^0.2.6' },
+623 silly publish   devDependencies:
+623 silly publish    { grunt: '0.4.5',
+623 silly publish      'grunt-cli': '0.1.13',
+623 silly publish      'grunt-simple-mocha': '0.4.0',
+623 silly publish      'grunt-contrib-jshint': '0.11.0',
+623 silly publish      mocha: '2.1.0',
+623 silly publish      should: '4.6.5',
+623 silly publish      sinon: '1.12.2',
+623 silly publish      supertest: '0.15.0' },
+623 silly publish   engines: { node: '>=0.8 <0.12' },
+623 silly publish   readme: '# Node-RED\n\nhttp://nodered.org\n\n[![Build Status](https://travis-ci.org/node-red/node-red.png)](https://travis-ci.org/node-red/node-red) [![Coverage Status](https://coveralls.io/repos/node-red/node-red/badge.png?branch=master)](https://coveralls.io/r/node-red/node-red?branch=master)\n\n\nA visual tool for wiring the Internet of Things.\n\n![Screenshot](http://nodered.org/images/node-red-screenshot.png "Node-RED: A visual tool for wiring the Internet of Things")\n\n## Quick Start\n\nCheck out [INSTALL](INSTALL.md) for full instructions on getting started.\n\n1. download the zip and unzip, or git clone\n2. cd node-red\n3. npm install\n4. node red.js\n5. Open <http://localhost:1880>\n\n## Getting Help\n\nMore documentation can be found [here](http://nodered.org/docs).\n\nFor further help, or general discussion, please use the [mailing list](https://groups.google.com/forum/#!forum/node-red).\n\n## Browser Support\n\nThe Node-RED editor runs in the browser. We routinely develop and test using\nChrome and Firefox. We have anecdotal evidence that it works in recent versions of IE.\n\nWe have basic support for using in mobile/tablet browsers.\n\n## Contributing\n\nBefore raising a pull-request, please read our [contributing guide](https://github.com/node-red/node-red/blob/master/CONTRIBUTING.md).\n\n## Authors\n\nNode-RED is a creation of [IBM Emerging Technology](http://ibm.com/blogs/et).\n\n* Nick O\'Leary [@knolleary](http://twitter.com/knolleary)\n* Dave Conway-Jones [@ceejay](http://twitter.com/ceejay)\n\nFor more open-source projects from IBM, head over [here](http://ibm.github.io).\n\n## Copyright and license\n\nCopyright 2013, 2015 IBM Corp. under [the Apache 2.0 license](LICENSE).\n',
+623 silly publish   readmeFilename: 'README.md',
+623 silly publish   bugs: { url: 'https://github.com/node-red/node-red/issues' },
+623 silly publish   _id: 'node-red@0.10.3',
+623 silly publish   dist: { shasum: '6e374a1426f6602825499236a5f6e1eaaf5fb4ee' },
+623 silly publish   _from: './' }
+624 verbose url raw node-red
+625 verbose url resolving [ 'https://registry.npmjs.org/', './node-red' ]
+626 verbose url resolved https://registry.npmjs.org/node-red
+627 info trying registry request attempt 1 at 12:20:21
+628 http PUT https://registry.npmjs.org/node-red
+629 http 403 https://registry.npmjs.org/node-red
+630 error publish Failed PUT 403
+631 error Error: forbidden cannot modify pre-existing version: 0.10.3
+631 error old={"name":"node-red","version":"0.10.3","description":"A visual tool for wiring the Internet of Things","homepage":"http://nodered.org","license":"Apache","repository":{"type":"git","url":"https://github.com/node-red/node-red.git"},"main":"red/red.js","scripts":{"start":"node red.js","test":"grunt"},"bin":{"node-red":"./red.js"},"contributors":[{"name":"Nick O'Leary"},{"name":"Dave Conway-Jones"}],"keywords":["editor","messaging","iot","m2m","pi","arduino","beaglebone","ibm","flow"],"dependencies":{"express":"3.17.2","when":"3.7.2","bcryptjs":"2.1.0","nopt":"3.0.1","mqtt":"0.3.x","ws":"0.7.1","fs-extra":"0.16.3","clone":"0.2.0","mustache":"1.0.0","cron":"1.0.6","raw-body":"1.3.2","twitter-ng":"0.6.2","oauth":"0.9.12","xml2js":"0.4.4","sentiment":"0.2.3","irc":"0.3.9","follow-redirects":"0.0.3","cors":"2.5.3","mkdirp":"0.5.0","cheerio":"0.18.0","uglify-js":"2.4.16","nodemailer":"1.3.0","imap":"0.8.14","request":"2.42.0","on-headers":"1.0.0","is-utf8":"0.2.0","serialport":"1.4.10","feedparser":"0.19.2","fs.notify":"0.0.4","passport":"0.2.1","passport-http-bearer":"1.0.1","passport-oauth2-client-password":"0.1.2","oauth2orize":"1.0.1"},"devDependencies":{"grunt":"0.4.5","grunt-cli":"0.1.13","grunt-simple-mocha":"0.4.0","grunt-contrib-jshint":"0.11.0","mocha":"2.1.0","should":"4.6.5","sinon":"1.12.2","supertest":"0.15.0"},"engines":{"node":">=0.8 <0.12"},"bugs":{"url":"https://github.com/node-red/node-red/issues"},"_id":"node-red@0.10.3","dist":{"shasum":"9a4448802eb34fec056bc3c7f5b034887cba4233","tarball":"http://registry.npmjs.org/node-red/-/node-red-0.10.3.tgz"},"_from":".","_npmVersion":"1.4.6","_npmUser":{"name":"knolleary","email":"nick.oleary@gmail.com"},"maintainers":[{"name":"knolleary","email":"nick.oleary@gmail.com"}]}
+631 error new={"name":"node-red","version":"0.10.3","description":"A visual tool for wiring the Internet of Things","homepage":"http://nodered.org","license":"Apache","repository":{"type":"git","url":"https://github.com/node-red/node-red.git"},"main":"red/red.js","scripts":{"start":"node red.js","test":"grunt"},"bin":{"node-red":"./red.js"},"contributors":[{"name":"Nick O'Leary"},{"name":"Dave Conway-Jones"}],"keywords":["editor","messaging","iot","m2m","pi","arduino","beaglebone","ibm","flow"],"dependencies":{"express":"3.17.2","when":"3.7.2","bcryptjs":"2.1.0","nopt":"3.0.1","mqtt":"0.3.x","ws":"0.7.1","fs-extra":"0.16.3","clone":"0.2.0","mustache":"1.0.0","cron":"1.0.6","raw-body":"1.3.2","twitter-ng":"0.6.2","oauth":"0.9.12","xml2js":"0.4.4","sentiment":"0.2.3","irc":"0.3.9","follow-redirects":"0.0.3","cors":"2.5.3","mkdirp":"0.5.0","cheerio":"0.18.0","uglify-js":"2.4.16","nodemailer":"1.3.0","imap":"0.8.14","request":"2.42.0","on-headers":"1.0.0","is-utf8":"0.2.0","serialport":"1.4.10","feedparser":"0.19.2","fs.notify":"0.0.4","passport":"0.2.1","passport-http-bearer":"1.0.1","passport-oauth2-client-password":"0.1.2","oauth2orize":"1.0.1","node-red-node-msgpack":"0.0.4","nodehelium":"^0.2.2","msgpack-js":"^0.3.0","msgpack":"^0.2.6"},"devDependencies":{"grunt":"0.4.5","grunt-cli":"0.1.13","grunt-simple-mocha":"0.4.0","grunt-contrib-jshint":"0.11.0","mocha":"2.1.0","should":"4.6.5","sinon":"1.12.2","supertest":"0.15.0"},"engines":{"node":">=0.8 <0.12"},"readme":"# Node-RED\u000a\u000ahttp://nodered.org\u000a\u000a[![Build Status](https://travis-ci.org/node-red/node-red.png)](https://travis-ci.org/node-red/node-red) [![Coverage Status](https://coveralls.io/repos/node-red/node-red/badge.png?branch=master)](https://coveralls.io/r/node-red/node-red?branch=master)\u000a\u000a\u000aA visual tool for wiring the Internet of Things.\u000a\u000a![Screenshot](http://nodered.org/images/node-red-screenshot.png \"Node-RED: A visual tool for wiring the Internet of Things\")\u000a\u000a## Quick Start\u000a\u000aCheck out [INSTALL](INSTALL.md) for full instructions on getting started.\u000a\u000a1. download the zip and unzip, or git clone\u000a2. cd node-red\u000a3. npm install\u000a4. node red.js\u000a5. Open <http://localhost:1880>\u000a\u000a## Getting Help\u000a\u000aMore documentation can be found [here](http://nodered.org/docs).\u000a\u000aFor further help, or general discussion, please use the [mailing list](https://groups.google.com/forum/#!forum/node-red).\u000a\u000a## Browser Support\u000a\u000aThe Node-RED editor runs in the browser. We routinely develop and test using\u000aChrome and Firefox. We have anecdotal evidence that it works in recent versions of IE.\u000a\u000aWe have basic support for using in mobile/tablet browsers.\u000a\u000a## Contributing\u000a\u000aBefore raising a pull-request, please read our [contributing guide](https://github.com/node-red/node-red/blob/master/CONTRIBUTING.md).\u000a\u000a## Authors\u000a\u000aNode-RED is a creation of [IBM Emerging Technology](http://ibm.com/blogs/et).\u000a\u000a* Nick O'Leary [@knolleary](http://twitter.com/knolleary)\u000a* Dave Conway-Jones [@ceejay](http://twitter.com/ceejay)\u000a\u000aFor more open-source projects from IBM, head over [here](http://ibm.github.io).\u000a\u000a## Copyright and license\u000a\u000aCopyright 2013, 2015 IBM Corp. under [the Apache 2.0 license](LICENSE).\u000a","readmeFilename":"README.md","bugs":{"url":"https://github.com/node-red/node-red/issues"},"_id":"node-red@0.10.3","dist":{"shasum":"6e374a1426f6602825499236a5f6e1eaaf5fb4ee","tarball":"http://registry.npmjs.org/node-red/-/node-red-0.10.3.tgz"},"_from":"./","_npmVersion":"1.4.3","_npmUser":{"name":"theophoric","email":"theo@helium.com"},"maintainers":[{"name":"theophoric","email":"theo@helium.com"}]}: node-red
+631 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:237:14)
+631 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+631 error     at Request.EventEmitter.emit (events.js:98:17)
+631 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+631 error     at Request.EventEmitter.emit (events.js:117:20)
+631 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+631 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+631 error     at _stream_readable.js:920:16
+631 error     at process._tickCallback (node.js:415:13)
+632 error If you need help, you may report this *entire* log,
+632 error including the npm and node versions, at:
+632 error     <http://github.com/npm/npm/issues>
+633 error System Darwin 14.1.0
+634 error command "node" "/usr/local/bin/npm" "publish" "./"
+635 error cwd /Users/phaedrus/node/node-red
+636 error node -v v0.10.26
+637 error npm -v 1.4.3
+638 verbose exit [ 1, true ]
